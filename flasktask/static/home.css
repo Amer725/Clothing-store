@@ -1,0 +1,139 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(/static/taskpic/back.jpg);
+    background-color: #f5f3f0;
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color:#1d1b65 ;
+    
+
+}
+.nav-bar-right{
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    margin: 30px 45px
+}
+.nav-bar-right button{
+    color: #462b21;
+    margin-left: 35px;
+    background-color: #f5f3f0;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    
+}
+.nav-bar-right button:hover{
+transform: scale(1.2);
+color: rgb(245, 242, 240);
+}
+.nav-bar-left-logo{
+    width: 50px;
+    margin-left: 30px;
+    background: transparent;
+}
+a{
+width: min-content;}
+
+.wrapper-main{
+    display: flex;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 110px;
+}
+.main{
+    display: flex;
+    flex: 1;
+    background-color:  #1d1b65;
+    background-image: url(/static/taskpic/wavy-background-180786598e741294f08ecaf1990ddc76.png);
+    border-radius: 10px;
+
+
+}
+.left-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    color:#f5f3f0;
+    flex-shrink: 0;
+    flex: 0.6;
+}
+.left-main p{
+    padding-left: 20px;
+}
+.left-button{
+    align-self: center;
+    width: 220px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+}
+.left-button:hover{
+    transform: scale(1.2);
+    color: orangered;
+    }
+
+.right-main{
+    flex: 1;
+}
+.hero-img{
+width: 100%;
+border-radius: 10px;
+
+}
+
+
+@media(max-width: 1060px) {
+   .left-main{
+        font-size: 24px;
+        font-weight: 700;
+   }
+
+   .left-button{
+    width: 150px;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+}
+@media(max-width: 768px){
+    .nav-bar-right button{
+        margin-left: 15px;
+    }
+    .main{
+        display: flex;
+       flex-direction: column;
+    }
+    .left-main{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .left-main{
+        font-size: 20px;
+        font-weight: 700;
+   }
+
+   .left-button{
+    width: 110px;
+    font-size: 10px;
+    padding: 6px;
+    border-radius: 30px;
+    border: none;
+}
+}
+
